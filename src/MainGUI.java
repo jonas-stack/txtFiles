@@ -8,14 +8,16 @@ public class MainGUI {
 
     public static void main(String[] args) {
 
-        //MovieFileAccess.addToFile("Some line");
-        //MovieFileAccess.addTextAtLine("Wierd new one", 2);
-        MovieFileAccess.printFileContents();
+       //txtFile lineje 7240 springer til 7242
+
+      //MovieFileAccess.addToFile("Some line");
+      //MovieFileAccess.addTextAtLine("", 7240);// method does not work currently
+      MovieFileAccess.printFileContents();
 
 
-        Scanner consoleScanner = new Scanner(System.in);
-        //MovieService.insertNewMovie(consoleScanner);
-        MovieService.findAndRepeatMovieTitleSearch(consoleScanner);
-        consoleScanner.close();
+      Scanner consoleScanner = new Scanner(System.in);
+      MovieService.insertNewMovie(consoleScanner);
+      MovieService.findAndRepeatMovieTitleSearch(consoleScanner);
+      consoleScanner.close();
     }
 }
